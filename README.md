@@ -1,3 +1,3 @@
 # MSDL_2017
 
-Download the datafile from https://drive.google.com/open?id=0B8CePNnEoN36bm93RzR0dTRSbGs
+In order to run this simulation, you need to add into your file path SimTB Toolbox (http://mialab.mrn.org/software/simtb/) and need to install OMPbox from (http://www.cs.technion.ac.il/~ronrubin/software.html).

@@ -1,7 +1,7 @@
 %% Script to call dictionary learning on the SIMTB dataset
 clear all; close all;
 % clc; 
-load('SimTB_Data');
+SimTB_DataGen;
 sigma = 0.2;   
 rng(65);
 
