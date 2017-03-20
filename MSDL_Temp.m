@@ -31,7 +31,9 @@ end
 
 %% Dict Learning
 for iter = 1:St.nIter
-    [X_0,X] = SparseCode(Data,Dict_0,Dict,X_0,X,St.Spar,St.AlgoType);
+	for i=1:2
+		[X_0,X] = SparseCode(Data,Dict_0,Dict,X_0,X,St.Spar,St.AlgoType);
+	end
     if St.verbose == 1; displayError(Data,Dict_0,Dict,X_0,X,iter);  end
     
     [Dict_0,Dict] = DictUpdate2(Data,Dict_0,Dict,X_0,X,St);
