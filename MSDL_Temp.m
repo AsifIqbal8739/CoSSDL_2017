@@ -131,7 +131,7 @@ function displayError(Data,Dict_0,Dict,X_0,X,iter)
     display([sprintf('Iter:%2d, Total Error: ',iter),sprintf('%0.2f,\t',EE)]) %
 end
 
-%% Dictionary Update Step Using ALM
+%% Dictionary Update Step Using ADMM
 function [Dict_0,Dict] = DictUpdate2(Data,Dict_0,Dict,X_0,X,St)
     M = St.nSub;    max_mu = St.max_mu;     scale_mu = St.scale_mu;   ini_mu = St.ini_mu;
     Z0 = zeros(size(Dict_0));   mu = ini_mu;    
